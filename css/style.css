@@ -1,0 +1,16 @@
+body{
+	background-color: #2a2a2e;
+}
+
+#newtab-search-text{
+    border: 0 !important;
+    border-radius: 50px 50px 50px 50px !important;
+    background-color: #1E1E1EBF !important;
+    outline: none !important;
+}
+
+#searchSubmit{
+    outline: none !important;
+    border: 0 !important;
+    background-color: none !important;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png">
+        <link rel="stylesheet" href="chrome://browser/content/contentSearchUI.css">
+        <link rel="stylesheet" href="chrome://activity-stream/content/css/activity-stream.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/script.js"></script>
+        <title>Nouvel onglet</title>
+    </head>
+
+
+
+    <body class="activity-stream" style="--newtab-background-color:rgba(42, 42, 46, 1); --newtab-text-primary-color:rgba(249, 249, 250, 1); --lwt-sidebar-background-color:rgb(56, 56, 61); --lwt-sidebar-text-color:rgba(249, 249, 250, 1); --newtab-search-icon:url(moz-extension://92cadc0a-0f86-4a7b-81e9-364835eb551a/favicon.ico);" lwt-newtab="true" lwt-newtab-brighttext="true" lwt-sidebar="true" lwt-sidebar-brighttext="true">
+        <div id="root">
+            <div>
+                <div class="prefs-button">
+                    <button class="icon icon-settings" data-l10n-id="newtab-settings-button" title="Personnaliser la page Nouvel onglet" onclick="settings()">
+                        
+                    </button>
+                </div>
+                <div class="outer-wrapper ds-outer-wrapper-breakpoint-override only-search">
+                    <main>
+                        <div class="non-collapsible-section">
+                            <div class="search-wrapper">
+                                <div class="logo-and-wordmark">
+                                    <div class="logo"></div>
+                                    <div class="wordmark"></div>
+                                </div>
+                                <div class="search-inner-wrapper">
+                                    <input id="newtab-search-text" data-l10n-id="newtab-search-box-search-the-web-input" maxlength="256" type="search" autocomplete="off" aria-autocomplete="true" aria-controls="searchSuggestionTable" aria-expanded="false" placeholder="Rechercher sur le Web" title="Rechercher sur le Web" aria-label="Rechercher sur le Web" onkeyup="search_key(event)">
+                                    <button id="searchSubmit" class="search-button" data-l10n-id="newtab-search-box-search-button" title="Rechercher" aria-label="Rechercher" onclick="search()"></button>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-wrapper on">
+                            <div class="discovery-stream ds-layout">
+                                <div class="ds-column ds-column-12">
+                                    <div class="ds-column-grid">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <style data-styles="[[null]]"></style>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div id="footer-asrouter-container" role="presentation"></div>
+      
+    
+    </body>
+</html>
